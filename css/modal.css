@@ -4,8 +4,12 @@ html {
 }
 .img-cart {
   width: 50px;
-  margin: 10px;
+  margin: 15px;
 }
+/* .p-cart-item {
+  position: absolute;
+  top: 50%;
+} */
 *,
 *:before,
 *:after {
@@ -897,9 +901,6 @@ a {
 .w3-row-padding > .w3-quarter,
 .w3-row-padding > .w3-col {
   padding: 0 8px;
-}
-.w3-container {
-  height: 200px;
 }
 .w3-container,
 .w3-panel {
