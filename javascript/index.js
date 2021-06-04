@@ -122,7 +122,7 @@ function addToCart(img, name, price) {
   data.push(item);
   console.log("2", data);
   localStorage.setItem("items", JSON.stringify(data));
-  alert("Added to Cart!");
+  alert(`${name} was added to cart!`);
 }
 function clearCart() {
   localStorage.clear();
