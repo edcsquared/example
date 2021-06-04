@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SampleSite</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <div class="div-header">
+            <h1 style="margin: 0;"><span class="span-color">Sample</span>Site</h1>
+        </div>
+        <hr />
+        <div class="div-carousel">
+            <div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                    <img src="images/bags.png" style="width:100%; height: 300px;">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="images/bags.png" style="width:100%; height: 300px;">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="images/bags.png" style="width:100%; height: 300px;">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </div>
+        <br /> 
+        <br />
+        <div class="div-items">
+            <div class="row">
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%"/>
+                    <hr class="hr-color" />
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+
+                </div>
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color"/>
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+
+                </div>
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color"/>
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+                </div>
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color"/>
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+                </div>
+                <!--  -->
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color" />
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+                
+                </div>
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color" />
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+                
+                </div>
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color" />
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+                </div>
+                <div class="column">
+                    <img src="images/bag.png" style="width:100%" />
+                    <hr class="hr-color" />
+                    <p class="label-title">Good item name</p>
+                    <p>$1280 <button class="button-order">Order</button></p>
+                </div>
+            </div> 
+        </div>
+        <script src="javascript/carousel.js"></script>
+        <script src="javascript/index.js"></script>
+        <script>
+            var json = require("./json/item.json"); //(with path)
+                console.log("i", json);
+
+        </script>
+    </body>
+
+</html>
