@@ -4,6 +4,9 @@
 .span-color {
   color: #3636ab;
 }
+.img-item {
+  width: 100%;
+}
 .label-title {
   color: #3636ab;
   font-size: small;

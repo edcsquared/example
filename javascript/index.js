@@ -1,8 +1,80 @@
-function openModal(img, price) {
+const arrayData = [
+  {
+    name: "bag1",
+    brand: "apple",
+    description: "iphone 11",
+    price: "280",
+    img: "item1.png",
+  },
+  {
+    name: "bag2",
+    brand: "apple",
+    description: "iphone 11",
+    price: "380",
+    img: "item1.png",
+  },
+  {
+    name: "bag3",
+    brand: "apple",
+    description: "iphone 11",
+    price: "250",
+    img: "item1.png",
+  },
+  {
+    name: "bag4",
+    brand: "apple",
+    description: "iphone 11",
+    price: "280",
+    img: "item1.png",
+  },
+  {
+    name: "bag5",
+    brand: "apple",
+    description: "iphone 11",
+    price: "380",
+    img: "item1.png",
+  },
+  {
+    name: "bag6",
+    brand: "apple",
+    description: "iphone 11",
+    price: "250",
+    img: "item1.png",
+  },
+
+  {
+    name: "bag7",
+    brand: "apple",
+    description: "iphone 11",
+    price: "380",
+    img: "item1.png",
+  },
+  {
+    name: "bag8",
+    brand: "apple",
+    description: "iphone 11",
+    price: "250",
+    img: "item1.png",
+  },
+];
+
+let stringDom = "";
+arrayData.map((d) => {
+  stringDom =
+    stringDom +
+    ` <div class="column">
+            <img src="images/${d.img}" style="width:100%"/>
+            <hr class="hr-color" />
+            <p class="label-title">${d.name}</p>
+            <p>${d.price} <button onclick="addToCart('images/${d.img}','${d.name}',${d.price})" class="button-order">Order</button></p>
+        </div>`;
+});
+document.getElementById("row-items").innerHTML = stringDom;
+
+function openModal() {
   document.getElementById("id01").style.display = "block";
   const data = JSON.parse(localStorage.getItem("items"));
 
-  console.log("d", data);
   if (!data) {
     document.getElementById("noItems").innerText =
       "Number of items in the cart: 0";
@@ -45,7 +117,6 @@ function addToCart(img, name, price) {
     price,
   };
   let data = JSON.parse(localStorage.getItem("items"));
-  console.log("1", data);
 
   if (!data) data = [];
   data.push(item);

@@ -4,6 +4,7 @@
         <title>SampleSite</title>
         <link rel="stylesheet" href="css/index.css" />
         <link rel="stylesheet" href="css/modal.css" />
+       
     </head>
     <body>
         <div class="div-header">
@@ -36,8 +37,8 @@
         <br /> 
         <br />
         <div class="div-items">
-            <div class="row">
-                <div class="column">
+            <div class="row row-items" id="row-items">
+                <!-- <div class="column">
                     <img src="images/bag.png" style="width:100%"/>
                     <hr class="hr-color" />
                     <p class="label-title">Good item name</p>
@@ -62,7 +63,7 @@
                     <hr class="hr-color"/>
                     <p class="label-title">Good item name</p>
                     <p>$1280 <button onclick="addToCart('images/bag.png','name4',1270)" class="button-order">Order</button></p>
-                </div>
+                </div> -->
                 <!--  -->
                 
             </div> 
@@ -78,17 +79,16 @@
                             <p id="noItems"></p>
                             <!-- <button>Checkout</button> -->
                             <div class="modal-items" ></div>
-                            <button>Checkout</button>
+                            <button style="margin:10px">Checkout</button>
+                            <br />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <script src="javascript/carousel.js"></script>
         <script src="javascript/index.js"></script>
-        <script>
-        </script>
+        
     </body>
 
 </html>
