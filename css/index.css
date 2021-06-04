@@ -18,6 +18,7 @@
   border-radius: 10%;
   background-color: blue;
   height: 27px;
+  cursor: pointer;
   margin-left: 100px;
 }
 /* Set additional styling options for the columns*/

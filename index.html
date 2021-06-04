@@ -3,10 +3,14 @@
     <head>
         <title>SampleSite</title>
         <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/modal.css" />
     </head>
     <body>
         <div class="div-header">
-            <h1 style="margin: 0;"><span class="span-color">Sample</span>Site</h1>
+            <h1 style="margin: 0;"><span onclick="clearCart()" class="span-color">Sample</span>Site <span>
+            <img src="./images/cart.png" style="margin: 10px; width: 5%; float: right;" onclick="openModal()"/>
+
+            </span></h1>
         </div>
         <hr />
         <div class="div-carousel">
@@ -37,63 +41,51 @@
                     <img src="images/bag.png" style="width:100%"/>
                     <hr class="hr-color" />
                     <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
+                    <p>$1280 <button onclick="addToCart('images/bag.png',1280)" class="button-order">Order</button></p>
 
                 </div>
                 <div class="column">
                     <img src="images/bag.png" style="width:100%" />
                     <hr class="hr-color"/>
                     <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
+                    <p>$1280 <button onclick="addToCart('images/bag.png',1230)" class="button-order">Order</button></p>
 
                 </div>
                 <div class="column">
                     <img src="images/bag.png" style="width:100%" />
                     <hr class="hr-color"/>
                     <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
+                    <p>$1280 <button onclick="addToCart('images/bag.png',1380)" class="button-order">Order</button></p>
                 </div>
                 <div class="column">
                     <img src="images/bag.png" style="width:100%" />
                     <hr class="hr-color"/>
                     <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
+                    <p>$1280 <button onclick="addToCart('images/bag.png',1270)" class="button-order">Order</button></p>
                 </div>
                 <!--  -->
-                <div class="column">
-                    <img src="images/bag.png" style="width:100%" />
-                    <hr class="hr-color" />
-                    <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
                 
-                </div>
-                <div class="column">
-                    <img src="images/bag.png" style="width:100%" />
-                    <hr class="hr-color" />
-                    <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
-                
-                </div>
-                <div class="column">
-                    <img src="images/bag.png" style="width:100%" />
-                    <hr class="hr-color" />
-                    <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
-                </div>
-                <div class="column">
-                    <img src="images/bag.png" style="width:100%" />
-                    <hr class="hr-color" />
-                    <p class="label-title">Good item name</p>
-                    <p>$1280 <button class="button-order">Order</button></p>
-                </div>
             </div> 
         </div>
+        <div class="div-modal">
+            <div class="w3-container">
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container w3-container2">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <h2>Cart</h2>
+                            <p id="noItems"></p>
+                            <!-- <button>Checkout</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="javascript/carousel.js"></script>
         <script src="javascript/index.js"></script>
         <script>
-            var json = require("./json/item.json"); //(with path)
-                console.log("i", json);
-
         </script>
     </body>
 
